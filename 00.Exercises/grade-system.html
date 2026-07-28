@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Marks</title>
+</head>
+<body>
+    <script>
+        let total_marks = 1100;
+        let obtained_marks = 902;
+        let marks_Per = (obtained_marks/total_marks)*100;
+        if ((marks_Per > 90) && (marks_Per <=100)){
+            document.write('Your Grade is A+ with marks percentage: ', marks_Per)
+        }else if ((marks_Per > 70) && (marks_Per <=90)){
+            document.write('Your Grade is B with marks percentage: ', marks_Per)
+        }else if ((marks_Per > 50) && (marks_Per <=70)){
+            document.write('Your Grade is C with marks percentage: ', marks_Per)
+        }else if ((marks_Per > 40) && (marks_Per <=50)){
+            document.write('Your Grade is D with marks percentage: ', marks_Per)
+        }else{
+            document.write('Your Grade is F with marks percentage: ', marks_Per)
+        }
+    </script>
+</body>
+</html>
