@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operators</title>
+</head>
+
+<body>
+
+    <h1>Assignment Operators</h1>
+    <p id="demo"></p>
+
+    <script>
+        let x = 10;
+
+        document.getElementById("demo").innerHTML += " Initial value = " + x + "<br>";
+
+        x += 5;
+        document.getElementById("demo").innerHTML += " x += 5 => " + x + "<br>";
+
+        x -= 5;
+        document.getElementById("demo").innerHTML += " x -= 5 => " + x + "<br>";
+
+        x *= 2;
+        document.getElementById("demo").innerHTML += "x *= 2 => " + x + "<br>";
+
+        x /= 4;
+        document.getElementById("demo").innerHTML += "x /= 4 => " + x + "<br>";
+
+        x %= 3;
+        document.getElementById("demo").innerHTML += "x %= 3 => " + x + "<br>";
+
+        x **= 2;
+        document.getElementById("demo").innerHTML += "x **= 2 => " + x + "<br>";
+    </script>
+</body>
+
+</html>
