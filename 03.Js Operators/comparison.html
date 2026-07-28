@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        #demo {
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Comparison Operators</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        let x = 10;
+        let y = 20;
+        let z = "10";
+
+        document.getElementById("demo").innerHTML +=
+            "x = 10<br>" +
+            "y = 20<br>" +
+            'z = "10" (String)<br>';
+        document.getElementById("demo").innerHTML += "x == z : " + (x == z) + "<br>";
+        document.getElementById("demo").innerHTML += "x === z : " + (x === z) + "<br>";
+        document.getElementById("demo").innerHTML += "x != y : " + (x != y) + "<br>";
+        document.getElementById("demo").innerHTML += "x !== z : " + (x !== z) + "<br>";
+        document.getElementById("demo").innerHTML += "x > y : " + (x > y) + "<br>";
+        document.getElementById("demo").innerHTML += "x < y : " + (x < y) + "<br>";
+        document.getElementById("demo").innerHTML += "x >= 10 : " + (x >= 10) + "<br>";
+        document.getElementById("demo").innerHTML += "x <= y : " + (x <= y);
+
+    </script>
+</body>
+
+</html>
