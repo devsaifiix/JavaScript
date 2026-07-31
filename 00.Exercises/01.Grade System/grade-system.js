@@ -1,3 +1,4 @@
+// write a code which shows a garde with percentage of marks of a student
 let total_marks, obtained_marks, marks_Per;
 
 total_marks = Number(prompt("Enter Total Marks:"));
