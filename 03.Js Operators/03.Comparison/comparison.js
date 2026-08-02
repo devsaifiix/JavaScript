@@ -29,3 +29,6 @@ document.write("x >= 10: ", greaterThanEqual + "<br>");
 
 let lessThanEqual = x <= y;
 document.write("x <= y: ", lessThanEqual + "<br>");
+
+console.log(null == undefined);     // return true
+console.log(null === undefined);    // return false
