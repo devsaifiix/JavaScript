@@ -1,53 +1,91 @@
-// // The if Statement
-// let temperature = prompt("Enter a temperature: ")
+// The if Statement
 
-// if (temperature > 25){
-//     console.log("It is hot day.")
-// }
+document.write("<h2>1. The if Statement</h2>");
 
-// // The else Statement
-// if ((temperature > 0) && (temperature < 30)){
-//     console.log("It is cold day.")
-// }else{
-//     console.log("It is hot day.")
-// }
+let temperature = Number(prompt("Enter a temperature:"));
 
-// // The else if Statement
-// if ((temperature > 0) && (temperature <= 15)){
-//     console.log("It is very vey cold day.")
-// }else if ((temperature > 15) && (temperature <=30)){
-//     console.log("It is moderate cold day.")
-// }else if ((temperature > 30) && (temperature <= 45)){
-//     console.log("It is a hot day.")
-// }else if ((temperature > 45) && (temperature <=60)){
-//     console.log("It is very very hot day.")
-// }else{
-//     console.log("Enter a suitable temperature.")
-// }
+if (temperature > 25) {
+    document.write("It is a hot day.");
+}
 
-// // The switch Statement
-// const Grade = 'E';
+document.write("<hr>");
 
-// switch(Grade){
-//     case 'A':
-//         console.log('A --> is very good');
-//         break;
-//     case 'B':
-//         console.log('B --> Good, keep learning');
-//         break;
-//     case 'C':
-//         console.log('C -->Need impovements');
-//         break;
-//     case 'D':
-//     // case 'E':
-//         console.log('D --> Not Good');
-//         break; 
-//     default:
-//         console.log('Invalid Grade');      
-// }
 
-// Ternary Operator (? :) in JavaScript
-let num = prompt("Enter a number: ")
+// The else Statement
 
-let result = (num%2 == 0) ? "Even Number" : "Odd Number"
-console.log(result)
+document.write("<h2>2. The else Statement</h2>");
+
+if (temperature > 0 && temperature < 30) {
+    document.write("It is a cold day.");
+} else {
+    document.write("It is a hot day.");
+}
+
+document.write("<hr>");
+
+
+// The else if Statement
+
+document.write("<h2>3. The else if Statement</h2>");
+
+if (temperature > 0 && temperature <= 15) {
+    document.write("It is a very very cold day.");
+}
+else if (temperature > 15 && temperature <= 30) {
+    document.write("It is a moderate cold day.");
+}
+else if (temperature > 30 && temperature <= 45) {
+    document.write("It is a hot day.");
+}
+else if (temperature > 45 && temperature <= 60) {
+    document.write("It is a very very hot day.");
+}
+else {
+    document.write("Enter a suitable temperature.");
+}
+
+document.write("<hr>");
+
+
+// The switch Statement
+
+document.write("<h2>4. The switch Statement</h2>");
+
+let grade = prompt("Enter your Grade (A, B, C, D):").toUpperCase();
+
+switch (grade) {
+
+    case "A":
+        document.write("A → Very Good");
+        break;
+
+    case "B":
+        document.write("B → Good, Keep Learning");
+        break;
+
+    case "C":
+        document.write("C → Needs Improvement");
+        break;
+
+    case "D":
+        document.write("D → Not Good");
+        break;
+
+    default:
+        document.write("Invalid Grade");
+}
+
+document.write("<hr>");
+
+
+// Ternary Operator
+
+document.write("<h2>5. Ternary Operator (? :)</h2>");
+
+let num = Number(prompt("Enter a number:"));
+
+let result = (num % 2 == 0) ? "Even Number" : "Odd Number";
+
+document.write("Result: " + result);
+
+document.write("<hr>");
