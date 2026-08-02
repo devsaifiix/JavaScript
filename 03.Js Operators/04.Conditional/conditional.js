@@ -89,3 +89,17 @@ let result = (num % 2 == 0) ? "Even Number" : "Odd Number";
 document.write("Result: " + result);
 
 document.write("<hr>");
+
+// another if else example
+document.write("<h2>6. Another Example of if else</h2>");
+
+let name = "Saif";
+let gender = "Male";
+
+if (gender == "Male"){
+    document.write('Hello Mr.' + name);
+}else{
+    document.write("Hello Miss" + name);
+}
+
+document.write("<hr>");
